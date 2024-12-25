@@ -131,7 +131,7 @@
 @media screen and (max-width: 600px) {
     .footer{
         flex-direction: column;
-        gap:4px
+        gap:3px
     }
     .turn-highlight2 {
         display: flex;
