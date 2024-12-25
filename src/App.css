@@ -1,0 +1,11 @@
+:root{
+    --yellow:rgb(255, 255, 255);
+    
+}
+body{
+    background-color: #dee7e2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: linear-gradient(to right,rgb(192, 213, 141), rgb(165, 135, 64)); */
+    margin: 0;
+    padding:5px;
+}
