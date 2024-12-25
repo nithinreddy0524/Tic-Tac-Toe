@@ -2,10 +2,10 @@ import Icon from "../Icon/Icon";
 import './Card.css';
 function Card({gameEnd,player,onPlay,index}){
     let icon=<Icon/>
-    if(player=="X"){
+    if(player=="Tiger"){
         icon=<Icon name="cross"/>
     }
-    else if(player=="O"){
+    else if(player=="Lion"){
         icon=<Icon name="circle"/>
     }
     return(

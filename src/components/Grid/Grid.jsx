@@ -10,24 +10,34 @@ function Grid({ numberOfCards }){
     const [board,setBoard] = useState(Array(numberOfCards).fill(""));
     const [turn,setTurn]=useState(true)//true=>O false=>X
     const [winner,setWinner]=useState(null);
+    const [status,setStatus]=useState(false);
     const navigate = useNavigate();
 
     function play(index){
         if(turn==true){
-            board[index]="O";
+            board[index]="Lion";
         }
         else{
-            board[index]="X";
+            board[index]="Tiger";
         }
-        const win= isWinner(board,turn ? "O":"X");
+        const win= isWinner(board,turn ? "Lion":"Tiger");
         if(win){
             setWinner(win);
         }
         setBoard([...board]);
         setTurn(!turn);
+        if(isArrayFull(board)){
+            setStatus(true);
+        }
+    }
+
+    function isArrayFull(board) {
+        const nonNullArr = board.filter(element => element !== "");
+        return nonNullArr.length === 9;
     }
 
     function reset(){
+        setStatus(false);
         setTurn(true);
         setWinner(null);
         setBoard(Array(numberOfCards).fill(""));
@@ -40,15 +50,20 @@ function Grid({ numberOfCards }){
                 <p>Tic-Tac-Toe</p>
             </div>
             {
-                winner && (
-                    <>
-                        <h1 className='turn-highlight'>Winner is - {winner}</h1>
-                    </>
+                !status && winner && (
+                    <div className='turn-highlight2'>
+                        <span> Congratulations, {winner} </span><span>You won the game!</span>
+                    </div>
                 )
             }
             {
-                !winner&&(
-                    <h1 className='turn-highlight'>Current Turn : {(turn)?"O":"X"}</h1>
+                !status && !winner&&(
+                    <h1 className='turn-highlight'>Current Turn : {(turn)?"Lion":"Tiger"}</h1>
+                )
+            }
+            {
+                status && (
+                    <h1 className='turn-highlight3'> It's a Draw! </h1>
                 )
             }
             <div className="grid1">

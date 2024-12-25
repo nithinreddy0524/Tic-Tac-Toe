@@ -16,15 +16,17 @@ function Instructions() {
                 <div class="instructions">
                     <h1>Instructions</h1>
                     <p><strong>Objective:</strong><br/>
-                    Tic Tac Toe is a classic 2-player game where the goal is to get three of your marks (either "X" or "O") in a row, either horizontally, vertically, or diagonally, on a 3x3 grid.</p>
+                        <ul>Tic Tac Toe is a classic 2-player game where the goal is to get three of your marks (either "Lion" or "Tiger") in a row, either horizontally, vertically, or diagonally, on a 3x3 grid.
+                        </ul>
+                    </p>
                     <br />
                     <p><strong>How to Play:</strong></p>
                     <ul>
-                    <li><strong>Two Players:</strong> The game is played by two players. One player will use "X" and the other will use "O".</li>
-                    <li><strong>Game Setup:</strong> The game board consists of a 3x3 grid. Players take turns to place their marks ("X" or "O") in an empty cell on the grid.</li>
+                    <li><strong>Two Players:</strong> The game is played by two players. One player will use "Lion" and the other will use "Tiger".</li>
+                    <li><strong>Game Setup:</strong> The game board consists of a 3x3 grid. Players take turns to place their marks ("Lion" or "Tiger") in an empty cell on the grid.</li>
                     <li><strong>Taking Turns:</strong>
                         <ul>
-                        <li>Player 1 uses "X" and Player 2 uses "O".</li>
+                        <li>Player 1 uses "Lion" and Player 2 uses "Tiger".</li>
                         <li>Players take turns clicking on an empty square to place their mark.</li>
                         </ul>
                     </li>
