@@ -15,12 +15,10 @@ function Instructions() {
 
                 <div class="instructions">
                     <h1>Instructions</h1>
-                    <p><strong>Objective:</strong></p><br/>
+                    <p><strong>Objective:</strong></p>
                     <ul>
                         <li>Tic Tac Toe is a classic 2-player game where the goal is to get three of your marks (either "Lion" or "Tiger") in a row, either horizontally, vertically, or diagonally, on a 3x3 grid.</li>
                     </ul>
-                    
-                    <br />
                     <p><strong>How to Play:</strong></p>
                     <ul>
                     <li><strong>Two Players:</strong> The game is played by two players. One player will use "Lion" and the other will use "Tiger".</li>
