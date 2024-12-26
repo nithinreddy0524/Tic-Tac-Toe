@@ -50,7 +50,7 @@ function Grid({ numberOfCards }){
                 <p>Tic-Tac-Toe</p>
             </div>
             {
-                !status && winner && (
+                winner && (
                     <div className='turn-highlight2'>
                         <span> Congratulations, {winner} </span><span>You won the game!</span>
                     </div>
@@ -62,7 +62,7 @@ function Grid({ numberOfCards }){
                 )
             }
             {
-                status && (
+                status && !winner && (
                     <h1 className='turn-highlight3'> It's a Draw! </h1>
                 )
             }
